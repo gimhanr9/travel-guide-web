@@ -3,26 +3,25 @@ import { ThemeProvider } from '@mui/material/styles';
 import { Routes, Route } from 'react-router-dom';
 import MainLayout from './components/main_layout';
 import { publicRoutes } from './routes';
-import { Theme } from './utils/Theme';
-import MainLayout from './components/main_layout';
+import { Theme } from './styles/Theme';
+
 
 const App = () => {
   return (
     <ThemeProvider theme={Theme}>
-      <div className='App'>       
-          <Routes exact>
-        {publicRoutes.map((route, idx) => (
+      <div className='App'>
+        <Routes exact>
+          {publicRoutes.map((route, idx) => (
 
             <Route
-            path={route.path}
-            element={(<MainLayout>
-              {route.component}
-            </MainLayout> )}
-            key={idx}
-  />
+              path={route.path}
+              element={(<MainLayout>
+                {route.component}
+              </MainLayout>)}
+              key={idx} />
           ))}
- 
-          </Routes>       
+
+        </Routes>
       </div>
     </ThemeProvider>
   );
