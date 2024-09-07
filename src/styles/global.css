@@ -2,3 +2,9 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.package__card{
+    background-image: url('../assets/images/Aurora_Village.webp') !important;
+    background-size: cover;
+    background-position: center;
+}

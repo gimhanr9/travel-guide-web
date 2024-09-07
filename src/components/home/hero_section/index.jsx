@@ -7,7 +7,7 @@ import Header from "../../main_layout/Header";
 import styles from "./HeroSection.module.css";
 import RectangularOutlinedButton from "../../common/RectangularOutlinedButton";
 
-function HeroSection() {
+const HeroSection = () => {
   return (
     <div className={styles.hero}>
       <Header />
@@ -33,6 +33,6 @@ function HeroSection() {
       </div>
     </div>
   );
-}
+};
 
 export default HeroSection;

@@ -102,20 +102,23 @@ export const Theme = createTheme({
       lineHeight: '34px',
       textTransform: 'uppercase'
     },
-    subtitle1: {
-      fontFamily: Fonts.Roboto,
-      fontSize: 18,
+    subtitle1: { //Pricing text
+      fontFamily: Fonts.Raleway,
+      fontSize: 28,
       fontWeight: 700,
+      letterSpacing: '0.03em',
     },
-    subtitle2: {// textfield label
-      fontFamily: Fonts.Roboto,
-      fontSize: 14,
+    subtitle2: {
+      fontFamily: Fonts.Raleway,
+      fontSize: 25,
       fontWeight: 700,
+      letterSpacing: '0.03em',
     },
     body1: {
-      fontFamily: Fonts.Roboto,
-      fontSize: 20,
-      fontWeight: 400,
+      fontFamily: Fonts.Raleway,
+      fontSize: 15,
+      fontWeight: 600,
+      letterSpacing: '0.03em',
     },
     body2: {
       fontFamily: Fonts.Raleway,
@@ -124,9 +127,10 @@ export const Theme = createTheme({
       letterSpacing: '0.03em',
     },
     caption: {
-      fontFamily: Fonts.Roboto,
-      fontSize: 15,
+      fontFamily: Fonts.Raleway,
+      fontSize: 16,
       fontWeight: 400,
+      letterSpacing: '0.03em',
     },
   },
   components: {
@@ -173,20 +177,6 @@ export const Theme = createTheme({
       },
     },
 
-    // MuiContainer: {
-    //   styleOverrides: {
-    //     root: {
-    //       // Change maxWidth property for lg breakpoint
-    //       '@media (min-width: 1280px)': {
-    //         maxWidth: '28%', // Specify your custom width for large screens
-    //       },
-    //     },
-    //     maxWidthLg:{
-    //       maxWidth:"40%"
-    //     }
-    //   },
-    // },
-
     MuiChip: {
       styleOverrides: {
         root: {
@@ -197,5 +187,12 @@ export const Theme = createTheme({
         },
       },
     },
+    MuiListItemIcon: {
+      styleOverrides: {
+        root: {
+          minWidth: 25
+        }
+      }
+    }
   },
 });
