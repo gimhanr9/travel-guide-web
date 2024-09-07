@@ -9,11 +9,19 @@ const AboutSection = () => {
   return (
     <div className={styles.about__section}>
       <Typography variant="h2">About Us</Typography>
-      <Grid container alignItems="center" justifyContent="center" spacing={2}>
+      <Grid container justifyContent="center" spacing={2}>
         <Grid item size={{ xs: 8, md: 4 }}>
           <img src={AuroraVillage} className={styles.about__section__image} />
         </Grid>
-        <Grid item size={{ xs: 8, md: 8 }} flexDirection="column">
+        <Grid
+          item
+          size={{ xs: 8, md: 8 }}
+          display="flex"
+          flexDirection="column"
+          justifyContent="space-between"
+          alignItems="start"
+          sx={{ py: 2 }}
+        >
           <Typography variant="h5">
             Unlocking the Extraordinary: <br />
             Aurora Village Within Reach, Beyond Belief

@@ -5,6 +5,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Header from "../../main_layout/Header";
 import styles from "./HeroSection.module.css";
+import RectangularOutlinedButton from "../../common/RectangularOutlinedButton";
 
 function HeroSection() {
   return (
@@ -17,7 +18,7 @@ function HeroSection() {
         <Typography variant="h1" className={styles.hero__title}>
           AURORA VILLAGE
         </Typography>
-        <button className={styles.hero__button}>Explore offers</button>
+        <RectangularOutlinedButton title="Explore Offers" />
       </div>
       <div className={styles.hero__social}>
         <IconButton color="inherit">

@@ -69,8 +69,8 @@ export const Theme = createTheme({
       fontFamily: Fonts.Impact,
       fontWeight: 400,
       letterSpacing: '0.03em',
-      lineHeight: '146px',
-      textTransform: 'uppercase'
+      textTransform: 'uppercase',
+      fontSize: 'clamp(2rem, 10vw, 5.3rem)',
     },
 
     h3: {
@@ -85,14 +85,14 @@ export const Theme = createTheme({
       fontWeight: 400,
       letterSpacing: '0.03em',
       textTransform: 'uppercase',
-      fontSize: 'clamp(2rem, 12vw, 3.8rem)',
+      fontSize: 'clamp(1.5rem, 6vw, 3.8rem)',
     },
     h5: {
       fontFamily: Fonts.Impact,
       fontWeight: 400,
       letterSpacing: '0.03em',
       textTransform: 'uppercase',
-      fontSize: 'clamp(1.3rem, 6vw, 1.8rem)',
+      fontSize: 'clamp(1.3rem, 4vw, 1.8rem)',
     },
 
     h6: {
