@@ -1,3 +1,4 @@
 export const Fonts = {
-    Roboto: 'Roboto, sans-serif',
-  };
+  Impact: 'Impact, sans-serif',
+  Raleway: 'Raleway, sans-serif',
+};

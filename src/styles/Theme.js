@@ -59,34 +59,48 @@ export const Theme = createTheme({
   },
   typography: {
     h1: {
-      fontFamily: Fonts.Roboto,
-      fontSize: 36,
-      fontWeight: 700,
+      fontFamily: 'Impact',
+      fontWeight: 400,
+      letterSpacing: '0.03em',
+      textTransform: 'uppercase',
+      fontSize: 'clamp(3.5rem, 12vw, 8.5rem)',
     },
     h2: {
-      fontFamily: Fonts.Roboto,
-      fontSize: 34,
-      fontWeight: 700,
+      fontFamily: Fonts.Impact,
+      fontWeight: 400,
+      letterSpacing: '0.03em',
+      lineHeight: '146px',
+      textTransform: 'uppercase'
     },
+
     h3: {
-      fontFamily: Fonts.Roboto,
-      fontSize: 32,
-      fontWeight: 700,
+      fontFamily: Fonts.Impact,
+      fontWeight: 400,
+      letterSpacing: '0.03em',
+      lineHeight: '66px',
+      textTransform: 'uppercase'
     },
     h4: {
-      fontFamily: Fonts.Roboto,
-      fontSize: 34,
-      fontWeight: 700,
+      fontFamily: Fonts.Impact,
+      fontWeight: 400,
+      letterSpacing: '0.03em',
+      textTransform: 'uppercase',
+      fontSize: 'clamp(2rem, 12vw, 3.8rem)',
     },
     h5: {
-      fontFamily: Fonts.Roboto,
-      fontSize: 28,
-      fontWeight: 700,
+      fontFamily: Fonts.Impact,
+      fontWeight: 400,
+      letterSpacing: '0.03em',
+      textTransform: 'uppercase',
+      fontSize: 'clamp(1.3rem, 6vw, 1.8rem)',
     },
+
     h6: {
-      fontFamily: Fonts.Roboto,
-      fontSize: 24,
-      fontWeight: 700,
+      fontFamily: Fonts.Impact,
+      fontWeight: 400,
+      letterSpacing: '0.03em',
+      lineHeight: '34px',
+      textTransform: 'uppercase'
     },
     subtitle1: {
       fontFamily: Fonts.Roboto,
@@ -103,10 +117,11 @@ export const Theme = createTheme({
       fontSize: 20,
       fontWeight: 400,
     },
-    body2: { // link
-      fontFamily: Fonts.Roboto,
+    body2: {
+      fontFamily: Fonts.Raleway,
       fontSize: 14,
-      fontWeight: 700,
+      fontWeight: 400,
+      letterSpacing: '0.03em',
     },
     caption: {
       fontFamily: Fonts.Roboto,
@@ -118,12 +133,11 @@ export const Theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          fontFamily: Fonts.Roboto,
-          fontWeight: 500,
+          fontFamily: Fonts.Raleway,
+          fontWeight: 400,
           fontSize: 15,
+          letterSpacing: '0.03em',
           textTransform: 'none',
-          borderRadius: 25,
-          height: 48
         },
       },
     },

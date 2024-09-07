@@ -1,20 +1,22 @@
 import React from "react";
-import styles from "./HeroSection.module.css";
-import { IconButton } from "@mui/material";
+import { IconButton, Typography } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Header from "../../main_layout/Header";
+import styles from "./HeroSection.module.css";
 
 function HeroSection() {
   return (
     <div className={styles.hero}>
       <Header />
       <div className={styles.hero__content}>
-        <h2 className={styles.hero__subtitle}>
+        <Typography variant="h4" className={styles.hero__subtitle}>
           BEST PLACE TO SEE THE NORTHERN LIGHTS
-        </h2>
-        <h1 className={styles.hero__title}>AURORA VILLAGE</h1>
+        </Typography>
+        <Typography variant="h1" className={styles.hero__title}>
+          AURORA VILLAGE
+        </Typography>
         <button className={styles.hero__button}>Explore offers</button>
       </div>
       <div className={styles.hero__social}>
