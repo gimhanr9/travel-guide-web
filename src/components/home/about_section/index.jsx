@@ -1,4 +1,4 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import React from "react";
 import AuroraVillage from "../../../assets/images/Aurora_Village.webp";
 import styles from "./AboutSection.module.css";
@@ -37,7 +37,7 @@ const AboutSection = () => {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat{" "}
           </Typography>
-          <RectangularOutlinedButton title="Explore Offers" />
+          <RectangularOutlinedButton title="Explore offers" />
         </Grid>
       </Grid>
     </div>
