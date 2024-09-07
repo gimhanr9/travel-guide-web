@@ -11,6 +11,7 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
+import { Colors } from "../../utils/Colors";
 
 const sections = ["Home", "About", "Packages", "Reviews", "Contact us"];
 const languages = ["EN", "DE", "FR", "NL"];
@@ -35,7 +36,11 @@ function Header() {
   };
 
   return (
-    <AppBar position="static" elevation={0}>
+    <AppBar
+      position="static"
+      elevation={0}
+      sx={{ pl: 2, pr: 2, bgcolor: Colors.transparent }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography

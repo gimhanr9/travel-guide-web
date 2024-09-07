@@ -11,14 +11,14 @@ const App = () => {
     <ThemeProvider theme={Theme}>
       <div className='App'>
         <Routes exact>
-          {publicRoutes.map((route, idx) => (
+          {publicRoutes.map((route, index) => (
 
             <Route
               path={route.path}
               element={(<MainLayout>
                 {route.component}
               </MainLayout>)}
-              key={idx} />
+              key={index} />
           ))}
 
         </Routes>
