@@ -1,0 +1,17 @@
+
+.packages__section {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+  }
+  
+  /* Media query for tablets and larger screens */
+  @media (min-width: 481px) {
+  }
+  
+  /* Media query for large screens */
+  @media (min-width: 769px) {
+    .packages__section {
+      text-align: left;
+    }
+  }

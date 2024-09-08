@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Section titles*/
+.section-title{
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+
+/*Layout wrapper*/
+.layout-wrapper{
+  animation: fade-in 3s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Language selector text*/
+.selected-language{
+  margin-left: 5px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/*Secondary Section(About, Packages, Contact, Testimonials)*/
+.secondary-section-main {
+  background-image: url('../assets/images/Milky_Way.webp'); 
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: white;
+}
+
+/*Testimonial Section*/
+:root {
+  --primary: #6244c5;
+  --secondary: #ffc448;
+  --light: #fafafb;
+  --dark: #12141d;
+}
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+  }
+  
+  .my-6 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+  
+  .py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  
+  /*** Testimonial ***/
+  .testimonial-left,
+  .testimonial-right {
+    position: relative;
+  }
+  
+  .testimonial-left img,
+  .testimonial-right img {
+    position: absolute;
+    padding: 5px;
+    border: 1px solid var(--secondary);
+    border-radius: 70px;
+  }
+  
+  .testimonial-left img:nth-child(1),
+  .testimonial-right img:nth-child(3) {
+    width: 70px;
+    height: 70px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .testimonial-left img:nth-child(2),
+  .testimonial-right img:nth-child(2) {
+    width: 60px;
+    height: 60px;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+  }
+  
+  .testimonial-left img:nth-child(3),
+  .testimonial-right img:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    bottom: 10%;
+    right: 10%;
+  }
+  
+  .testimonial-carousel .owl-item img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .testimonial-carousel .testimonial-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px solid var(--secondary);
+    border-radius: 60px;
+  }
+  
+  .testimonial-carousel .owl-dots {
+    height: 40px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    border: 2px solid var(--secondary);
+    border-radius: 30px;
+    transition: 0.5s;
+  }
+  
+  .testimonial-carousel .owl-dot::after {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    left: 5px;
+    border-radius: 16px;
+    background: var(--secondary);
+    transition: 0.5s;
+  }
+  
+  .testimonial-carousel .owl-dot.active::after {
+    background: var(--primary);
+  }
+  
+  .testimonial-image {
+    width: 120px; 
+    height: 120px; 
+    object-fit: cover;
+    border-radius: 50%; 
+  }
+
+  .orange-border {
+    border: 2px solid orange;
+  }
+
+  .slick-dots li button:before {
+    font-size: 12px; 
+    color: black; 
+    opacity: 1; 
+  }
+  
+  .slick-dots .slick-active button:before {
+    color: orange !important;
+    opacity: 1;
+  }
+
+  /*Contact Floating Button*/
+  .contact-fab {
+    position: absolute;
+    bottom: 60px; 
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /*Button glow on hover*/
+  .glow-on-hover {
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #ffffff
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

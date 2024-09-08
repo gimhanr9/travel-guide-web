@@ -1,26 +1,25 @@
-import React from "react";
-import { Box, Container, CssBaseline } from "@mui/material";
-import { Colors } from "../../utils/Colors";
+import React, { useEffect } from "react";
+import Footer from "./Footer";
+import ContactFloatingButton from "./ContactFloatingButton";
 
 const MainLayout = (props) => {
+  useEffect(() => {
+    const { hash } = window.location;
+    if (hash) {
+      const id = hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element)
+        element.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <React.Fragment>
-      <Box minHeight="100vh" height="100%" background={Colors.background}>
-        <Box className="main-content">
-          <Container component="main" maxWidth="xs">
-            <CssBaseline />
-            <Box
-              mt={8}
-              display="flex"
-              flexDirection="column"
-              alignItems="center"
-            >
-
-              {props.children}
-            </Box>
-          </Container>
-        </Box>
-      </Box>
+      <div id="layout-wrapper">
+        <div>{props.children}</div>
+        <Footer />
+        <ContactFloatingButton />
+      </div>
     </React.Fragment>
   );
 };

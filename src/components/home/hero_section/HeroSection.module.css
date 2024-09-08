@@ -1,0 +1,65 @@
+/* HeroSection.module.css */
+
+.hero {
+  background-image: url('../../../assets/images/Aurora_Borealis.webp'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  color: white;
+  padding: 0 10px; 
+}
+
+.hero__content {
+  text-align: center;
+  z-index: 1;
+  margin-top: 10vh;
+}
+
+.hero__title {
+  margin-bottom: 1.5rem; 
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+
+.hero__subtitle {
+  margin-bottom: 1.5rem;
+}
+
+.hero__button {
+  margin-top: 1.5rem;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.hero__button:hover {
+  background-color: #333;
+}
+
+/* Media query for tablets and larger screens */
+@media (min-width: 769px) {
+  .hero {
+    padding: 0 20px;
+  }
+
+  .hero__button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .hero__title {
+    margin-bottom: 2rem;
+  }
+
+  .hero__subtitle {
+    margin-bottom: 2rem;
+  }
+}
