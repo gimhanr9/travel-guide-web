@@ -35,27 +35,6 @@ export const Theme = createTheme({
       dark: Colors.black,
       contrastText: Colors.white,
     },
-
-    // error: {
-    //   main: Colors.error,
-    //   light: Colors.errorLight,
-    //   dark: Colors.errorDark,
-    //   contrastText: Colors.errorText,
-    // },
-    // white: {
-    //   main: Colors.white,
-    //   contrastText: Colors.black,
-    // },
-    // black: {
-    //   main: Colors.black,
-    //   contrastText: Colors.white,
-    // },
-    // specialBlue: {
-    //   main: Colors.blueHighlight,
-    //   light: Colors.blueText,
-    //   dark: Colors.secondary,
-    //   contrastText: Colors.white,
-    // },
   },
   typography: {
     h1: {
@@ -173,6 +152,15 @@ export const Theme = createTheme({
       styleOverrides: {
         root: {
           minWidth: 25
+        }
+      }
+    },
+
+    MuiMenuItem: {
+      styleOverrides: {
+        root: {
+          fontFamily: Fonts.Raleway,
+          fontSize: 14,
         }
       }
     }

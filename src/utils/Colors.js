@@ -21,5 +21,6 @@ export const Colors = {
   whatsapp: "#25D366",
   facebook: "#4267B2",
   instagram: "#E1306C",
-  twitter: "#1DA1F2"
+  twitter: "#1DA1F2",
+  blue: "#115293"
 }

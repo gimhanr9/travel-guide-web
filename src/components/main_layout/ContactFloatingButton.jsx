@@ -23,7 +23,7 @@ const ContactFloatingButton = () => {
         onClick={handleToggle}
         sx={{
           backgroundColor: Colors.light_orange,
-          "&:hover": { backgroundColor: "#115293" },
+          "&:hover": { backgroundColor: Colors.blue },
         }}
       >
         <ContactMail />

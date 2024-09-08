@@ -17,8 +17,8 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import LinkButton from "../common/LinkButton";
-
-const languages = ["EN", "DE", "FR", "NL"];
+import LanguageDropdown from "../common/LanguageDropdown";
+import languages from "../../data/languages";
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -138,35 +138,7 @@ const Header = () => {
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {languages.map((language, index) => (
-                <MenuItem key={index} onClick={handleCloseUserMenu}>
-                  <Typography sx={{ textAlign: "center" }}>
-                    {language}
-                  </Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+            <LanguageDropdown languages={languages} />
           </Box>
         </Toolbar>
       </Container>
