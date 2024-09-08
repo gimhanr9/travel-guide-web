@@ -2,7 +2,6 @@
 .about__section {
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
     text-align: center; 
   }
   
@@ -17,9 +16,6 @@
   
   /* Media query for tablets and larger screens */
   @media (min-width: 481px) {
-    .about__section {
-      padding: 0 40px;
-    }
   
     .about__section__image {
       max-width: 451px; 
@@ -30,7 +26,6 @@
   /* Media query for large screens */
   @media (min-width: 769px) {
     .about__section {
-      padding: 0 60px;
       text-align: left;
     }
   }

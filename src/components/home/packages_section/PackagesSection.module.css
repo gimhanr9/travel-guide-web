@@ -2,21 +2,16 @@
 .packages__section {
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
     text-align: center; 
   }
   
   /* Media query for tablets and larger screens */
   @media (min-width: 481px) {
-    .packages__section {
-      padding: 0 40px;
-    }
   }
   
   /* Media query for large screens */
   @media (min-width: 769px) {
     .packages__section {
-      padding: 0 60px;
       text-align: left;
     }
   }

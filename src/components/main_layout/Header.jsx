@@ -8,6 +8,7 @@ import {
   Box,
   Button,
   Container,
+  Divider,
   IconButton,
   Menu,
   MenuItem,
@@ -89,6 +90,23 @@ const Header = () => {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: "block", md: "none" } }}
             >
+              <Typography
+                variant="h6"
+                noWrap
+                sx={{
+                  m: 2,
+                  display: { xs: "flex", md: "none" },
+                  flexGrow: 1,
+                  fontFamily: "monospace",
+                  fontWeight: 700,
+                  letterSpacing: ".3rem",
+                  color: "inherit",
+                  textDecoration: "none",
+                }}
+              >
+                JOHN DOE
+              </Typography>
+              <Divider />
               {sections.map((section, index) => (
                 <MenuItem
                   key={index}
@@ -105,22 +123,6 @@ const Header = () => {
             </Menu>
           </Box>
 
-          <Typography
-            variant="h5"
-            noWrap
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            JOHN DOE
-          </Typography>
           <Box
             sx={{
               flexGrow: 1,
