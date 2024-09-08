@@ -17,5 +17,9 @@ export const Colors = {
   black: '#000000',
   white: '#ffffff',
   light_orange: '#ffb381',
-  yellow: "#008000"
+  yellow: "#008000",
+  whatsapp: "#25D366",
+  facebook: "#4267B2",
+  instagram: "#E1306C",
+  twitter: "#1DA1F2"
 }

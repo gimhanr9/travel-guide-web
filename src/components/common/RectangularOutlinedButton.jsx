@@ -8,6 +8,7 @@ const RectangularOutlinedButton = (props) => {
     <Button
       variant="outlined"
       sx={{ color: Colors.white, border: `1px solid ${Colors.white}` }}
+      className="glow-on-hover"
     >
       {props.title}
     </Button>

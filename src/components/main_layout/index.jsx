@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Footer from "./Footer";
+import ContactFloatingButton from "./ContactFloatingButton";
 
 const MainLayout = (props) => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const MainLayout = (props) => {
       <div id="layout-wrapper">
         <div>{props.children}</div>
         <Footer />
+        <ContactFloatingButton />
       </div>
     </React.Fragment>
   );
