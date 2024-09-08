@@ -12,12 +12,11 @@ const App = () => {
       <div className='App'>
         <Routes exact>
           {publicRoutes.map((route, index) => (
-
             <Route
               path={route.path}
-              element={(<MainLayout>
+              element={<MainLayout>
                 {route.component}
-              </MainLayout>)}
+              </MainLayout>}
               key={index} />
           ))}
 

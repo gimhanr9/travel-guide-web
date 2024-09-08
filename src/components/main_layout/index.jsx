@@ -1,14 +1,23 @@
-import React from "react";
-import { Box } from "@mui/material";
-import Header from "./Header";
-import { Colors } from "../../utils/Colors";
+import React, { useEffect } from "react";
+import Footer from "./Footer";
 
 const MainLayout = (props) => {
+  useEffect(() => {
+    const { hash } = window.location;
+    if (hash) {
+      const id = hash.replace("#", "");
+      const element = document.getElementById(id);
+      if (element)
+        element.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <React.Fragment>
-      <Box minHeight="100vh" height="100%">
-        <Box>{props.children}</Box>
-      </Box>
+      <div id="layout-wrapper">
+        <div>{props.children}</div>
+        <Footer />
+      </div>
     </React.Fragment>
   );
 };

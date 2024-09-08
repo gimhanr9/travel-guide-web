@@ -25,7 +25,7 @@ const TestimonialCard = (props) => {
 TestimonialCard.propTypes = {
   imageUrl: PropTypes.string,
   review: PropTypes.string,
-  customerName: PropTypes.array,
+  customerName: PropTypes.string,
 };
 
 export default TestimonialCard;

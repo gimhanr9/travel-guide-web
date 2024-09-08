@@ -8,7 +8,7 @@ import RectangularOutlinedButton from "../../common/RectangularOutlinedButton";
 const ContactSection = () => {
   return (
     <div className={styles.contact__section}>
-      <Typography variant="h2">About Us</Typography>
+      <Typography variant="h2">Contact Us</Typography>
       <Grid container justifyContent="center" spacing={2}>
         <Grid item size={{ xs: 8, md: 4 }}>
           <img src={AuroraVillage} className={styles.contact__section__image} />

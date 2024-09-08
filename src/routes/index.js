@@ -1,7 +1,7 @@
 import HomePage from "../pages/home"
 
 const publicRoutes = [
-    { path: "/home", component: <HomePage /> },
+    { path: "/", component: <HomePage /> },
 ]
 
 export { publicRoutes }

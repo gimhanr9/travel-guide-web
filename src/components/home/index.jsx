@@ -1,7 +1,6 @@
 import React from "react";
 import HeroSection from "./hero_section";
 import AboutSection from "./about_section";
-import styles from "./SecondarySection.module.css";
 import PackagesSection from "./packages_section";
 import ContactSection from "./contact_section";
 import TestimonialsSection from "./testimonials_section";
@@ -9,12 +8,22 @@ import TestimonialsSection from "./testimonials_section";
 const HomeComponent = () => {
   return (
     <div>
-      <HeroSection />
-      <div className={styles.secondary__section}>
-        <AboutSection />
-        <PackagesSection />
-        <TestimonialsSection />
-        <ContactSection />
+      <section id="home">
+        <HeroSection />
+      </section>
+      <div className="secondary-section-main">
+        <section id="about">
+          <AboutSection />
+        </section>
+        <section id="packages">
+          <PackagesSection />
+        </section>
+        <section id="testimonials">
+          <TestimonialsSection />
+        </section>
+        <section id="contact">
+          <ContactSection />
+        </section>
       </div>
     </div>
   );

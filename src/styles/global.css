@@ -3,6 +3,33 @@ body {
     padding: 0;
 }
 
+/*Layout wrapper*/
+.layout-wrapper{
+  animation: fade-in 3s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Secondary Section(About, Packages, Contact, Testimonials)*/
+.secondary-section-main {
+  background-image: url('../assets/images/Galaxy_Night.webp'); 
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: white;
+}
+
+/*Package Card*/
 .package__card{
     background-image: url('../assets/images/Aurora_Village.webp') !important;
     background-size: cover;

@@ -1,19 +1,22 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
-import MenuItem from "@mui/material/MenuItem";
+import { HashLink } from "react-router-hash-link";
 import { Colors } from "../../utils/Colors";
+import sections from "../../data/sections";
+import {
+  AppBar,
+  Avatar,
+  Box,
+  Button,
+  Container,
+  IconButton,
+  Menu,
+  MenuItem,
+  Toolbar,
+  Tooltip,
+  Typography,
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 
-const sections = ["Home", "About", "Packages", "Reviews", "Contact us"];
 const languages = ["EN", "DE", "FR", "NL"];
 
 function Header() {
@@ -86,9 +89,15 @@ function Header() {
               sx={{ display: { xs: "block", md: "none" } }}
             >
               {sections.map((section, index) => (
-                <MenuItem key={index} onClick={handleCloseNavMenu}>
+                <MenuItem
+                  key={index}
+                  component={HashLink}
+                  smooth
+                  to={section.to}
+                  onClick={handleCloseNavMenu}
+                >
                   <Typography sx={{ textAlign: "center" }}>
-                    {section}
+                    {section.location}
                   </Typography>
                 </MenuItem>
               ))}
@@ -121,10 +130,14 @@ function Header() {
             {sections.map((section, index) => (
               <Button
                 key={index}
+                disableRipple
+                component={HashLink}
+                smooth
+                to={section.to}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {section}
+                {section.location}
               </Button>
             ))}
           </Box>
