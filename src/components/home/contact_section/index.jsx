@@ -17,6 +17,7 @@ const ContactSection = () => {
           <img
             src={imageMap.Aurora_Light}
             className={styles.contact__section__image}
+            alt="Contact section - Northern Lights"
           />
         </Grid>
         <Grid

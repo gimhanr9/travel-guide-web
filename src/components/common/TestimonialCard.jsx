@@ -10,7 +10,7 @@ const TestimonialCard = (props) => {
         <img
           className="img-fluid rounded-circle p-2 mx-auto testimonial-image orange-border"
           src={imageMap[props.imageUrl]}
-          alt=""
+          alt="Customer"
         />
         <div className="testimonial-icon">
           <FaQuoteLeft className="text-primary" />

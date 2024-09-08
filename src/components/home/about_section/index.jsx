@@ -16,6 +16,7 @@ const AboutSection = () => {
           <img
             src={imageMap.Aurora_Village}
             className={styles.about__section__image}
+            alt="About section - Aurora Village"
           />
         </Grid>
         <Grid
