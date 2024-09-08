@@ -1,9 +1,7 @@
 import {
   Card,
-  CardActions,
   CardContent,
   CardHeader,
-  CardMedia,
   Divider,
   List,
   ListItem,
@@ -16,14 +14,26 @@ import Grid from "@mui/material/Grid2";
 import { MdCheckCircle } from "react-icons/md";
 import PropTypes from "prop-types";
 import RectangularOutlinedButton from "./RectangularOutlinedButton";
+import imageMap from "../../assets/imageMap";
+import { Colors } from "../../utils/Colors";
 
 const PackageCard = (props) => {
   return (
-    <Card sx={{ maxWidth: 330, minHeight: 320 }}>
+    <Card
+      sx={{
+        maxWidth: 330,
+        minHeight: 320,
+        backgroundImage: `url(${imageMap[props.imageUrl]})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <CardHeader
         title={props.title}
-        titleTypographyProps={{ variant: "subtitle2" }}
-        sx={{ textAlign: "center" }}
+        titleTypographyProps={{ variant: "subtitle2", color: Colors.white }}
+        sx={{
+          textAlign: "center",
+        }}
       />
       <Divider />
       <CardContent>
@@ -37,7 +47,10 @@ const PackageCard = (props) => {
                   </ListItemIcon>
                   <ListItemText
                     primary={item}
-                    primaryTypographyProps={{ variant: "body1" }}
+                    primaryTypographyProps={{
+                      variant: "body1",
+                      color: Colors.white,
+                    }}
                   />
                 </ListItem>
               ))}
@@ -46,7 +59,9 @@ const PackageCard = (props) => {
             <Divider />
           </Grid>
           <Grid item>
-            <Typography variant="subtitle1">${props.price} / adult</Typography>
+            <Typography variant="subtitle1" sx={{ color: Colors.white }}>
+              ${props.price} / adult
+            </Typography>
           </Grid>
           <Grid item>
             <RectangularOutlinedButton title="More Details" />

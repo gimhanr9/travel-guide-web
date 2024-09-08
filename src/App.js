@@ -13,16 +13,17 @@ const App = () => {
         <Routes exact>
           {publicRoutes.map((route, index) => (
             <Route
+              key={index}
               path={route.path}
-              element={<MainLayout>
+              element={< MainLayout >
                 {route.component}
               </MainLayout>}
-              key={index} />
+            />
           ))}
 
         </Routes>
       </div>
-    </ThemeProvider>
+    </ThemeProvider >
   );
 };
 

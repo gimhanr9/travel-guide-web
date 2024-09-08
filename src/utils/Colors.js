@@ -16,5 +16,6 @@ export const Colors = {
   transparent: '#00000000',
   black: '#000000',
   white: '#ffffff',
-  light_orange: '#ffb381'
+  light_orange: '#ffb381',
+  yellow: "#008000"
 }

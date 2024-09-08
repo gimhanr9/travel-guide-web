@@ -1,6 +1,18 @@
 const packages = [
     {
-        imageUrl: '../../assets/images/Aurora_Village.webp',
+        imageUrl: 'Aurora_Hunting',
+        title: 'Aurora Hunting',
+        price: 73.12,
+        inclusions: [
+            'Lorem ipsum dolor sit amet',
+            'Lorem ipsum dolor sit amet',
+            'Lorem ipsum dolor sit amet',
+            'Lorem ipsum dolor sit amet',
+        ],
+    },
+
+    {
+        imageUrl: 'Aurora_Camping',
         title: 'Aurora Tour',
         price: 73.12,
         inclusions: [
@@ -12,7 +24,19 @@ const packages = [
     },
 
     {
-        imageUrl: '../../assets/images/Aurora_Village.webp',
+        imageUrl: 'Aurora_Hunting',
+        title: 'Aurora Hunting',
+        price: 73.12,
+        inclusions: [
+            'Lorem ipsum dolor sit amet',
+            'Lorem ipsum dolor sit amet',
+            'Lorem ipsum dolor sit amet',
+            'Lorem ipsum dolor sit amet',
+        ],
+    },
+
+    {
+        imageUrl: 'Aurora_Camping',
         title: 'Aurora Tour',
         price: 73.12,
         inclusions: [
@@ -24,8 +48,8 @@ const packages = [
     },
 
     {
-        imageUrl: '../../assets/images/Aurora_Village.webp',
-        title: 'Aurora Tour',
+        imageUrl: 'Aurora_Hunting',
+        title: 'Aurora Hunting',
         price: 73.12,
         inclusions: [
             'Lorem ipsum dolor sit amet',
@@ -36,31 +60,7 @@ const packages = [
     },
 
     {
-        imageUrl: '../../assets/images/Aurora_Village.webp',
-        title: 'Aurora Tour',
-        price: 73.12,
-        inclusions: [
-            'Lorem ipsum dolor sit amet',
-            'Lorem ipsum dolor sit amet',
-            'Lorem ipsum dolor sit amet',
-            'Lorem ipsum dolor sit amet',
-        ],
-    },
-
-    {
-        imageUrl: '../../assets/images/Aurora_Village.webp',
-        title: 'Aurora Tour',
-        price: 73.12,
-        inclusions: [
-            'Lorem ipsum dolor sit amet',
-            'Lorem ipsum dolor sit amet',
-            'Lorem ipsum dolor sit amet',
-            'Lorem ipsum dolor sit amet',
-        ],
-    },
-
-    {
-        imageUrl: '../../assets/images/Aurora_Village.webp',
+        imageUrl: 'Aurora_Camping',
         title: 'Aurora Tour',
         price: 73.12,
         inclusions: [

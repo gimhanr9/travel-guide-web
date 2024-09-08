@@ -6,8 +6,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './styles/global.css';
 import ScrollToTop from './utils/ScrollToTop';
 
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
