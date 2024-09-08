@@ -43,7 +43,7 @@ const PackageCard = (props) => {
               {props.inclusions?.map((item, index) => (
                 <ListItem key={index} disablePadding sx={{ m: 0, p: 0 }}>
                   <ListItemIcon>
-                    <MdCheckCircle />
+                    <MdCheckCircle color="yellow" />
                   </ListItemIcon>
                   <ListItemText
                     primary={item}

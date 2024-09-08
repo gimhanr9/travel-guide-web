@@ -149,44 +149,26 @@ export const Theme = createTheme({
     MuiInputBase: {
       styleOverrides: {
         root: {
-          fontFamily: Fonts.Roboto,
+          fontFamily: Fonts.Raleway,
           fontSize: 15,
           fontWeight: '500',
-          height: 48
+          height: 48,
+          border: 'none',
+          outline: 'none'
         },
       },
     },
 
-    // MuiCheckbox: {
-    //   styleOverrides: {
-    //     root: {
-    //       '&.Mui-checked': {
-    //         color: 'black',
-    //       },
-    //     },
-    //   },
-    // },
-
     MuiFormControlLabel: {
       styleOverrides: {
         label: {
-          fontFamily: Fonts.Roboto,
+          fontFamily: Fonts.Raleway,
           fontSize: 14,
           fontWeight: 700,
         },
       },
     },
 
-    MuiChip: {
-      styleOverrides: {
-        root: {
-          fontFamily: Fonts.Roboto,
-          fontSize: 15,
-          fontWeight: 500,
-          padding: 3,
-        },
-      },
-    },
     MuiListItemIcon: {
       styleOverrides: {
         root: {

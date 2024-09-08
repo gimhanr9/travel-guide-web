@@ -1,6 +1,5 @@
 import React from "react";
-//import styles from "./TestimonialsSection.module.css";
-import { Box, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

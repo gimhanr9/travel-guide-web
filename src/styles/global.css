@@ -29,13 +29,6 @@ body {
   color: white;
 }
 
-/*Package Card*/
-.package__card{
-    background-image: url('../assets/images/Aurora_Village.webp') !important;
-    background-size: cover;
-    background-position: center;
-}
-
 /*Testimonial Section*/
 :root {
   --primary: #6244c5;
@@ -157,3 +150,24 @@ body {
     background: var(--primary);
   }
   
+  .testimonial-image {
+    width: 120px; 
+    height: 120px; 
+    object-fit: cover;
+    border-radius: 50%; 
+  }
+
+  .orange-border {
+    border: 2px solid orange;
+  }
+
+  .slick-dots li button:before {
+    font-size: 12px; 
+    color: black; 
+    opacity: 1; 
+  }
+  
+  .slick-dots .slick-active button:before {
+    color: orange !important;
+    opacity: 1;
+  }

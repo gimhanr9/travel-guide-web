@@ -16,10 +16,11 @@ import {
   Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import LinkButton from "../common/LinkButton";
 
 const languages = ["EN", "DE", "FR", "NL"];
 
-function Header() {
+const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -128,17 +129,12 @@ function Header() {
             }}
           >
             {sections.map((section, index) => (
-              <Button
+              <LinkButton
                 key={index}
-                disableRipple
-                component={HashLink}
-                smooth
+                title={section.location}
                 to={section.to}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {section.location}
-              </Button>
+                handleClick={handleCloseNavMenu}
+              />
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
@@ -176,5 +172,5 @@ function Header() {
       </Container>
     </AppBar>
   );
-}
+};
 export default Header;

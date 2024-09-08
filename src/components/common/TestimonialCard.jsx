@@ -1,14 +1,15 @@
 import React from "react";
 import { FaQuoteLeft } from "react-icons/fa";
 import PropTypes from "prop-types";
+import imageMap from "../../assets/imageMap";
 
 const TestimonialCard = (props) => {
   return (
     <div className="testimonial-item text-center">
       <div className="position-relative mb-5">
         <img
-          className="img-fluid rounded-circle border border-secondary p-2 mx-auto"
-          src={props.imageUrl}
+          className="img-fluid rounded-circle p-2 mx-auto testimonial-image orange-border"
+          src={imageMap[props.imageUrl]}
           alt=""
         />
         <div className="testimonial-icon">

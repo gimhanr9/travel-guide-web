@@ -1,13 +1,18 @@
 import { Box, Button, TextField, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import React from "react";
+import imageMap from "../../assets/imageMap";
+import sections from "../../data/sections";
+import LinkButton from "../common/LinkButton";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import { Colors } from "../../utils/Colors";
 
 const Footer = () => {
   return (
     <Box
       component="footer"
       sx={{
-        backgroundImage: "url(https://example.com/your-background-image.jpg)", // Use your background image
+        backgroundImage: `url(${imageMap.Forest_Camping})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         padding: "2rem 0",
@@ -15,16 +20,14 @@ const Footer = () => {
         textAlign: "center",
       }}
     >
-      <Grid container spacing={2} justifyContent="center">
+      <Grid container spacing={3} alignItems="center">
         {/* Left Section - Logo */}
-        <Grid item xs={12} sm={4} md={3} lg={2}>
-          <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-            JOHN DOE
-          </Typography>
+        <Grid item size={{ xs: 12, md: 3 }}>
+          <Typography variant="h6">JOHN DOE</Typography>
         </Grid>
 
         {/* Center Section - Newsletter and Social Icons */}
-        <Grid item xs={12} sm={6} md={6} lg={5}>
+        <Grid item size={{ xs: 12, md: 6 }} justifyContent="center">
           <Typography variant="h5" sx={{ mb: 2 }}>
             YOUR ULTIMATE TRAVEL GUIDE!
           </Typography>
@@ -44,42 +47,37 @@ const Footer = () => {
                 width: { xs: "60%", sm: "70%" }, // Responsive width
               }}
             />
-            <Button variant="contained" sx={{ borderRadius: "0 4px 4px 0" }}>
-              {/* <ArrowForwardIcon /> */}
+            <Button
+              variant="contained"
+              sx={{
+                borderRadius: "0 4px 4px 0",
+                backgroundColor: "rgba(255, 255, 255, 0.8)",
+              }}
+            >
+              <ArrowForwardIosIcon sx={{ color: Colors.black }} />
             </Button>
-          </Box>
-          <Typography sx={{ mt: 2 }}>Follow us on</Typography>
-          <Box sx={{ display: "flex", justifyContent: "center", mt: 1 }}>
-            {/* <IconButton>
-              <WhatsApp sx={{ color: "#fff" }} />
-            </IconButton>
-            <IconButton>
-              <Instagram sx={{ color: "#fff" }} />
-            </IconButton>
-            <IconButton>
-              <Twitter sx={{ color: "#fff" }} />
-            </IconButton>
-            <IconButton>
-              <Facebook sx={{ color: "#fff" }} />
-            </IconButton> */}
           </Box>
         </Grid>
 
-        {/* Right Section - Navigation */}
-        <Grid item xs={12} sm={4} md={3} lg={2}>
-          <Typography variant="body1" sx={{ fontWeight: "bold", mb: 1 }}>
-            Home
-          </Typography>
-          <Typography variant="body1" sx={{ fontWeight: "bold", mb: 1 }}>
-            About
-          </Typography>
-          <Typography variant="body1" sx={{ fontWeight: "bold", mb: 1 }}>
-            Packages
-          </Typography>
-          <Typography variant="body1" sx={{ mb: 1 }}>
-            Reviews
-          </Typography>
-          <Typography variant="body1">Contact us</Typography>
+        <Grid item size={{ xs: 12, md: 3 }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", md: "flex" },
+              justifyContent: "center",
+              alignItems: "flex-start",
+              flexDirection: "column",
+            }}
+          >
+            {sections.map((section, index) => (
+              <LinkButton
+                key={index}
+                title={section.location}
+                to={section.to}
+                handleClick={() => console.log("Button click")}
+              />
+            ))}
+          </Box>
         </Grid>
       </Grid>
 
