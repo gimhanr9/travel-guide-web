@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import testimonials from "../../../data/testimonials";
 import TestimonialCard from "../../common/TestimonialCard";
+import styles from "./TestimonialSection.module.css";
 
 const TestimonialsSection = () => {
   const sliderSettings = {
@@ -15,23 +16,25 @@ const TestimonialsSection = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className="container-fluid py-5 my-5" id="testimonial">
-      <div className="container-fluid py-5">
-        <Typography variant="h2" className="section-title">
-          Testimonials
-        </Typography>
-        <div className="row justify-content-center">
-          <div className="col-lg-9 wow fadeInUp" data-wow-delay="0.5s">
-            <Slider {...sliderSettings}>
-              {testimonials.map((testimonial, index) => (
-                <TestimonialCard
-                  key={index}
-                  imageUrl={testimonial.imageUrl}
-                  review={testimonial.review}
-                  customerName={testimonial.customerName}
-                />
-              ))}
-            </Slider>
+    <div className={styles.testimonial__section}>
+      <div className="container-fluid py-5" id="testimonial">
+        <div className="container-fluid py-5">
+          <Typography variant="h2" className="section-title">
+            Testimonials
+          </Typography>
+          <div className="row justify-content-center my-5">
+            <div className="col-lg-9 wow fadeInUp" data-wow-delay="0.5s">
+              <Slider {...sliderSettings}>
+                {testimonials.map((testimonial, index) => (
+                  <TestimonialCard
+                    key={index}
+                    imageUrl={testimonial.imageUrl}
+                    review={testimonial.review}
+                    customerName={testimonial.customerName}
+                  />
+                ))}
+              </Slider>
+            </div>
           </div>
         </div>
       </div>

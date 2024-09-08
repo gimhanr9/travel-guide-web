@@ -9,7 +9,13 @@ import RoundedButton from "../../common/RoundedButton";
 const RenderPackages = ({ showMore }) => {
   if (showMore === true && packages.length > 3) {
     return packages.map((packageItem, index) => (
-      <Grid item key={index} size={{ xs: 6, lg: 4 }}>
+      <Grid
+        item
+        key={index}
+        size={{ xs: 12, md: 6, lg: 4 }}
+        display="flex"
+        justifyContent="center"
+      >
         <PackageCard
           imageUrl={packageItem.imageUrl}
           title={packageItem.title}
@@ -21,7 +27,13 @@ const RenderPackages = ({ showMore }) => {
   } else if (showMore === false && packages.length > 3) {
     const topPackages = packages.slice(0, 3);
     return topPackages.map((packageItem, index) => (
-      <Grid item key={index} size={{ xs: 6, lg: 4 }}>
+      <Grid
+        item
+        key={index}
+        size={{ xs: 12, md: 6, lg: 4 }}
+        display="flex"
+        justifyContent="center"
+      >
         <PackageCard
           imageUrl={packageItem.imageUrl}
           title={packageItem.title}
@@ -32,7 +44,13 @@ const RenderPackages = ({ showMore }) => {
     ));
   } else {
     return packages.map((packageItem, index) => (
-      <Grid item key={index} size={{ xs: 6, lg: 4 }}>
+      <Grid
+        item
+        key={index}
+        size={{ xs: 12, md: 6, lg: 4 }}
+        display="flex"
+        justifyContent="center"
+      >
         <PackageCard
           imageUrl={packageItem.imageUrl}
           title={packageItem.title}
@@ -71,7 +89,7 @@ const PackagesSection = () => {
       <Typography variant="h2" className="section-title">
         Packages
       </Typography>
-      <Grid container justifyContent="space-between" spacing={2}>
+      <Grid container justifyContent="center" alignItems="center" spacing={2}>
         <RenderPackages showMore={showMore} />
       </Grid>
       <RenderButton showMore={showMore} functionality={showMoreOrLess} />

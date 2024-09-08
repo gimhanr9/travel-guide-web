@@ -12,7 +12,7 @@ const AboutSection = () => {
         About Us
       </Typography>
       <Grid container justifyContent="center" spacing={2}>
-        <Grid item size={{ xs: 8, md: 4 }}>
+        <Grid item size={{ xs: 10, md: 4 }}>
           <img
             src={imageMap.Aurora_Village}
             className={styles.about__section__image}
@@ -24,7 +24,7 @@ const AboutSection = () => {
           display="flex"
           flexDirection="column"
           justifyContent="space-between"
-          alignItems="start"
+          alignItems={{ xs: "center", md: "flex-start" }}
           sx={{ py: 2 }}
         >
           <Typography variant="h5">
