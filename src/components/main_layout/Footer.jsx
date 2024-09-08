@@ -16,7 +16,7 @@ const Footer = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         padding: "2rem 0",
-        color: "#fff",
+        color: Colors.white,
         textAlign: "center",
       }}
     >

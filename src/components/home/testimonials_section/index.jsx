@@ -17,12 +17,12 @@ const TestimonialsSection = () => {
   };
   return (
     <div className={styles.testimonial__section}>
-      <div className="container-fluid py-5" id="testimonial">
-        <div className="container-fluid py-5">
+      <div className="container-fluid py-3" id="testimonial">
+        <div className="container-fluid py-3">
           <Typography variant="h2" className="section-title">
             Testimonials
           </Typography>
-          <div className="row justify-content-center my-5">
+          <div className="row justify-content-center my-4">
             <div className="col-lg-9 wow fadeInUp" data-wow-delay="0.5s">
               <Slider {...sliderSettings}>
                 {testimonials.map((testimonial, index) => (
