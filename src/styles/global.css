@@ -3,6 +3,12 @@ body {
     padding: 0;
 }
 
+/*Section titles*/
+.section-title{
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+}
+
 /*Layout wrapper*/
 .layout-wrapper{
   animation: fade-in 3s;

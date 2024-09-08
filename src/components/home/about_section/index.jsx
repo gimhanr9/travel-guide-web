@@ -1,17 +1,22 @@
 import { Typography } from "@mui/material";
 import React from "react";
-import AuroraVillage from "../../../assets/images/Aurora_Village.webp";
 import styles from "./AboutSection.module.css";
 import Grid from "@mui/material/Grid2";
 import RectangularOutlinedButton from "../../common/RectangularOutlinedButton";
+import imageMap from "../../../assets/imageMap";
 
 const AboutSection = () => {
   return (
     <div className={styles.about__section}>
-      <Typography variant="h2">About Us</Typography>
+      <Typography variant="h2" className="section-title">
+        About Us
+      </Typography>
       <Grid container justifyContent="center" spacing={2}>
         <Grid item size={{ xs: 8, md: 4 }}>
-          <img src={AuroraVillage} className={styles.about__section__image} />
+          <img
+            src={imageMap.Aurora_Village}
+            className={styles.about__section__image}
+          />
         </Grid>
         <Grid
           item
@@ -27,7 +32,9 @@ const AboutSection = () => {
             Aurora Village Within Reach, Beyond Belief
           </Typography>
 
-          <Typography variant="h4">Your Ultimate Travel Guide!</Typography>
+          <Typography variant="h4" className="section-title">
+            Your Ultimate Travel Guide!
+          </Typography>
 
           <Typography variant="body2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

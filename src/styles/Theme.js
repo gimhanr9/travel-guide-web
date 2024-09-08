@@ -78,10 +78,10 @@ export const Theme = createTheme({
       fontFamily: Fonts.Impact,
       fontWeight: 400,
       letterSpacing: '0.03em',
-      lineHeight: '34px',
-      textTransform: 'uppercase'
+      textTransform: 'uppercase',
+      fontSize: 'clamp(1.3rem, 5vw, 1.6rem)',
     },
-    subtitle1: { //Pricing text
+    subtitle1: {
       fontFamily: Fonts.Raleway,
       fontSize: 28,
       fontWeight: 700,

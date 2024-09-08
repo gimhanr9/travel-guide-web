@@ -6,7 +6,6 @@
     text-align: center; 
   }
   
-  
   /* Media query for tablets and larger screens */
   @media (min-width: 481px) {
     .packages__section {

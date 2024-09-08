@@ -17,7 +17,9 @@ const TestimonialsSection = () => {
   return (
     <div className="container-fluid py-5 my-5" id="testimonial">
       <div className="container-fluid py-5">
-        <Typography variant="h2">Testimonials</Typography>
+        <Typography variant="h2" className="section-title">
+          Testimonials
+        </Typography>
         <div className="row justify-content-center">
           <div className="col-lg-9 wow fadeInUp" data-wow-delay="0.5s">
             <Slider {...sliderSettings}>

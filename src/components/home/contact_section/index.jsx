@@ -1,17 +1,23 @@
 import { Typography } from "@mui/material";
 import React from "react";
-import AuroraVillage from "../../../assets/images/Aurora_Light.webp";
+
 import styles from "./ContactSection.module.css";
 import Grid from "@mui/material/Grid2";
 import RectangularOutlinedButton from "../../common/RectangularOutlinedButton";
+import imageMap from "../../../assets/imageMap";
 
 const ContactSection = () => {
   return (
     <div className={styles.contact__section}>
-      <Typography variant="h2">Contact Us</Typography>
+      <Typography variant="h2" className="section-title">
+        Contact Us
+      </Typography>
       <Grid container justifyContent="center" spacing={2}>
         <Grid item size={{ xs: 8, md: 4 }}>
-          <img src={AuroraVillage} className={styles.contact__section__image} />
+          <img
+            src={imageMap.Aurora_Light}
+            className={styles.contact__section__image}
+          />
         </Grid>
         <Grid
           item

@@ -68,7 +68,9 @@ const PackagesSection = () => {
 
   return (
     <div className={styles.packages__section}>
-      <Typography variant="h2">Packages</Typography>
+      <Typography variant="h2" className="section-title">
+        Packages
+      </Typography>
       <Grid container justifyContent="space-between" spacing={2}>
         <RenderPackages showMore={showMore} />
       </Grid>

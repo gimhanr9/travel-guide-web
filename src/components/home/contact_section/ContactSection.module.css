@@ -14,7 +14,7 @@
     display: block; 
     margin: 0 auto;
   }
-  
+
   /* Media query for tablets and larger screens */
   @media (min-width: 481px) {
     .contact__section {

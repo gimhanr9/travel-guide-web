@@ -22,6 +22,8 @@
 
 .hero__title {
   margin-bottom: 1.5rem; 
+  color: transparent;
+  -webkit-text-stroke: 2px white;
 }
 
 .hero__subtitle {
